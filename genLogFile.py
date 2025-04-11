@@ -20,8 +20,6 @@ def generate_log_file(filename="access.log", num_entries=100):
             status = random.choice(status_codes)
             f.write(generate_log_entry(ip, url, status))
 
-
-
-# Generate a sample log file (uncomment to create the file)
-generate_log_file()
+if __name__ == "__main__":
+    generate_log_file()
 
